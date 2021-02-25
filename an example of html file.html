@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<style>
+	body{
+		background-color:rgb(189,3,107);
+        text-align:center;
+		margin:10px;
+		padding:20px;
+		border: 5px dashed rgb(10,220,10);
+        }
+	#lable{
+		background-color:none;
+		color:rgb(10,10,200);
+		}
+	#dd.hover{
+		background-color:yellow;
+		}
+	.header {
+		background-color: #f1f1f1;
+		padding: 20px;
+		text-align: center;
+		}
+		
+		
+	.topnav {
+		overflow:hidden;
+        background-color: #333;
+        }
+	.topnav a {
+		float:left;
+		display:inline;
+		color: #f2f2f2;
+		padding: 20px 16px;
+		text-decoration: none;
+		}
+
+	.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+		}
+	.es{
+		color:rgb(100,100,0);
+		border-bottom: 20px rgb(10,10,220);
+		}
+	
+</style>
+<body>
+<div class="header">
+  <h1 id="dd">APPLICATIO FORM FOR ONLINE COURSES</h1>
+</div>
+
+<div class="topnav">
+  <a href="#">New User</a>
+  <a href="#">Sign In</a>
+ 
+</div>
+<p>
+<form action="/action_page.php">
+  
+	<label id="lable" for="fname">First name:</label><br>
+	<input type="text" id="fname" name="fname" value="Eg:sakthi"><br>
+	<label id="lable" for="lname">Last name:</label><br>
+	<input type="text" id="lname" name="lname" value="Eg:vel"><br>
+  
+  <label id="lable">Gender</label><br>
+  <input type="radio" id="rad1" name="gender" value="male">
+  <label for="rad1">male</lable><br>
+  <input type="radio" id="rad2" name="gender" value="female">
+  <label for="rad2">female</lable><br><hr> 
+  
+  <label id="lable" for="dept">Deptrament You Wish to join:</label><br>
+  
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="">
+  <label for="vehicle2">Cyber tech</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="">
+  <label for="vehicle3">machine learning</label><br>
+  
+  <input type="checkbox" id="vehicle4" name="vehicle4" value="">
+  <label  for="vehicle4">Data Science</label><br>
+  <input type="checkbox" id="vehicle5" name="vehicle5" value="">
+  <label  for="vehicle5">Web Development</label><br>
+  <input type="checkbox" id="vehicle6" name="vehicle6" value="">
+  <label for="vehicle6">Block Chain</label><br>
+  <hr>
+  <h5>Enter Your Contact details</h5>
+  <p>
+  <label id="lable" for="phone">Enter a phone number:</label><br>
+  <input type="tel" id="phone" name="phone" placeholder="12345-56789" pattern="[0-10]{5}-[0-10]{5}" required><br>
+  <label  id="lable" for="email">Enter your email:</label><br>
+  <input type="email" id="email" name="email">
+  <hr>
+  </p>
+  
+</p>
+
+ <input class="es" type="submit" value="Submit">
+  
+</form> 
+
+
+
+</body>
+</html>
